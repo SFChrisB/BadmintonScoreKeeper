@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BadminCourt">
+        <item name="android:layout_width">@dimen/courtLayoutWidth</item>
+        <item name="android:layout_height">@dimen/courtLayoutHeight</item>
+        <item name="android:layout_marginStart">@dimen/marZero</item>
+        <item name="android:layout_marginLeft">@dimen/marZero</item>
+        <item name="android:layout_marginBottom">@dimen/marZero</item>
+        <item name="android:layout_marginTop">@dimen/marSmll</item>
+    </style>
+
+    <style name="BadRacket">
+        <item name="android:layout_width">@dimen/racketLayoutWidth</item>
+        <item name="android:layout_height">@dimen/racketLayoutHeight</item>
+        <item name="android:layout_marginLeft">@dimen/marSmll</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+        <item name="android:layout_marginBottom">@dimen/marMid</item>
+    </style>
+
+    <style name="scoreText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txtDark</item>
+        <item name="android:textSize">@dimen/txtSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginLeft">@dimen/marSmll</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+    </style>
+
+    <style name="titleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+        <item name="android:layout_marginLeft">@dimen/marSmll</item>
+        <item name="android:textSize">@dimen/titleTxtSize</item>
+    </style>
+
+    <style name="finalScoreText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:text">@string/CScore</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/titleTxtSize</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+        <item name="android:layout_marginLeft">@dimen/marSmll</item>
+        <item name="android:layout_marginBottom">@dimen/MidTextMarg2</item>
+    </style>
+
+    <style name="pointButton1">
+        <item name="android:layout_width">@dimen/buttonWidth</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:layout_marginBottom">@dimen/marSmll</item>
+        <item name="android:layout_marginStart">@dimen/marMid</item>
+        <item name="android:layout_marginLeft">@dimen/marMid</item>
+        <item name="android:alpha">0.75</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:src">@drawable/shutc2</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txtSize</item>
+    </style>
+
+    <style name="pointButton2">
+        <item name="android:layout_width">@dimen/buttonWidth</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:alpha">0.75</item>
+        <item name="android:layout_marginEnd">@dimen/marMid</item>
+        <item name="android:layout_marginRight">@dimen/marMid</item>
+        <item name="android:layout_marginBottom">@dimen/marSmll</item>
+        <item name="android:background">@color/colorAccent2</item>
+        <item name="android:src">@drawable/shutc2</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txtSize</item>
+    </style>
+
+    <style name="statScoreA">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/CScore</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/txtSize</item>
+        <item name="android:layout_marginStart">@dimen/marSmll</item>
+        <item name="android:layout_marginLeft">@dimen/marSmll</item>
+    </style>
+
+    <style name="statScoreB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/CScore</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/txtSize</item>
+        <item name="android:layout_marginEnd">@dimen/marSmll</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+    </style>
+
+    <style name="resetBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">ResetData</item>
+        <item name="android:text">@string/Reset</item>
+        <item name="android:layout_marginEnd">@dimen/marSmll</item>
+        <item name="android:layout_marginRight">@dimen/marSmll</item>
+        <item name="android:layout_marginTop">@dimen/marLar</item>
+    </style>
+
+    <style name="temp">
+        <item name="android:textColor">@color/txtColor</item>
+        <item name="android:layout_width">@dimen/tempWidth</item>
+        <item name="android:layout_height">@dimen/tempHeight</item>
+    </style>
+
+</resources>

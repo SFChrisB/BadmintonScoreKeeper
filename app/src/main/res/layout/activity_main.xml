@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.badmintonscorekeeper.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+    <ImageView
+        android:id="@+id/CourtImage"
+        style="@style/BadminCourt"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/badmincourt1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/badmImage"
+        style="@style/BadRacket"
+        app:srcCompat="@drawable/badminton"
+        app:layout_constraintBottom_toTopOf="@+id/textScore"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/titleText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="@dimen/marMid"
+        android:text="@string/BTitle" />
+    <ImageButton
+        android:id="@+id/PA_Aces_btn"
+        style="@style/pointButton1"
+        android:onClick="paAceBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PA_In_btn" />
+    <ImageButton
+        android:id="@+id/PA_In_btn"
+        style="@style/pointButton1"
+        android:onClick="paInBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PA_OpOut_btn" />
+    <ImageButton
+        android:id="@+id/PA_OpOut_btn"
+        style="@style/pointButton1"
+        android:onClick="paOpOutBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PA_OpNet_btn" />
+    <ImageButton
+        android:id="@+id/PA_OpNet_btn"
+        style="@style/pointButton1"
+        android:onClick="paOpNetBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PA_Faults_btn" />
+    <ImageButton
+        android:id="@+id/PA_Faults_btn"
+        style="@style/pointButton1"
+        android:onClick="paFaultBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageButton
+        android:id="@+id/PB_Aces_btn"
+        style="@style/pointButton2"
+        android:onClick="pbAceBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PB_In_btn" />
+    <ImageButton
+        android:id="@+id/PB_In_btn"
+        style="@style/pointButton2"
+        android:onClick="pbInBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PB_OpOut_btn" />
+    <ImageButton
+        android:id="@+id/PB_OpOut_btn"
+        style="@style/pointButton2"
+        android:onClick="pbOpOutBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PB_OpNet_btn" />
+    <ImageButton
+        android:id="@+id/PB_OpNet_btn"
+        style="@style/pointButton2"
+        android:onClick="pbOpNetBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PB_Fault_btn" />
+    <ImageButton
+        android:id="@+id/PB_Fault_btn"
+        style="@style/pointButton2"
+        android:onClick="pbFaultBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/textAces"
+        style="@style/scoreText"
+        android:text="@string/Aces"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toTopOf="@+id/textIn" />
+    <TextView
+        android:id="@+id/textIn"
+        style="@style/scoreText"
+        android:text="@string/In"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textOpOut" />
+    <TextView
+        android:id="@+id/textOpOut"
+        style="@style/scoreText"
+        android:text="@string/OppOut"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textOpNet" />
+    <TextView
+        android:id="@+id/textOpNet"
+        style="@style/scoreText"
+        android:text="@string/OppNet"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintBottom_toTopOf="@+id/textFault" />
+    <TextView
+        android:id="@+id/textFault"
+        style="@style/scoreText"
+        android:text="@string/Fault"
+        android:layout_marginBottom="@dimen/MidTextMarg3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/textScore"
+        style="@style/scoreText"
+        android:text="@string/Score"
+        android:layout_marginBottom="@dimen/MidTextMarg4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textAces" />
+    <TextView
+        android:id="@+id/PAScore"
+        style="@style/finalScoreText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintBottom_toTopOf="@+id/PA_Aces" />
+    <TextView
+        android:id="@+id/PBScore"
+        style="@style/finalScoreText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintBottom_toTopOf="@+id/PB_Aces" />
+    <TextView
+        android:id="@+id/PA_Aces"
+        style="@style/statScoreA"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintLeft_toRightOf="@+id/PA_Aces_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PA_In" />
+    <TextView
+        android:id="@+id/PA_In"
+        style="@style/statScoreA"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintLeft_toRightOf="@+id/PA_In_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PA_OpOut" />
+    <TextView
+        android:id="@+id/PA_OpOut"
+        style="@style/statScoreA"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintLeft_toRightOf="@+id/PA_OpOut_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PA_OpNet" />
+    <TextView
+        android:id="@+id/PA_OpNet"
+        style="@style/statScoreA"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/PA_OpNet_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/PA_Faults" />
+    <TextView
+        android:id="@+id/PA_Faults"
+        style="@style/statScoreA"
+        android:layout_marginBottom="@dimen/MidTextMarg3"
+        app:layout_constraintLeft_toRightOf="@+id/PA_Faults_btn"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <TextView
+        android:id="@+id/PB_Aces"
+        style="@style/statScoreB"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintRight_toLeftOf="@+id/PB_Aces_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PB_In" />
+    <TextView
+        android:id="@+id/PB_In"
+        style="@style/statScoreB"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintRight_toLeftOf="@+id/PB_In_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PB_OpOut" />
+    <TextView
+        android:id="@+id/PB_OpOut"
+        style="@style/statScoreB"
+        android:layout_marginBottom="@dimen/MidTextMarg1"
+        app:layout_constraintRight_toLeftOf="@+id/PB_OpOut_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PB_OpNet" />
+    <TextView
+        android:id="@+id/PB_OpNet"
+        style="@style/statScoreB"
+        android:layout_marginBottom="@dimen/MidTextMarg2"
+        app:layout_constraintRight_toLeftOf="@+id/PB_OpNet_btn"
+        app:layout_constraintBottom_toTopOf="@+id/PB_Faults" />
+    <TextView
+        android:id="@+id/PB_Faults"
+        style="@style/statScoreB"
+        android:layout_marginBottom="@dimen/MidTextMarg3"
+        app:layout_constraintRight_toLeftOf="@+id/PB_Fault_btn"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/reset_button"
+        android:onClick="ResetData"
+        style="@style/resetBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
